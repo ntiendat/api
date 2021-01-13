@@ -35,3 +35,9 @@ Route::get('baiviet', function () {
     return json_encode($data);
     
 });
+Route::post('register', function (Request $request ) {
+    $user = new TaiKhoan();
+    $user->username= $request->username;    
+    $user->pass= $request->pass;    
+    $user->save();
+});

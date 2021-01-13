@@ -19,7 +19,7 @@ class CreateBaiViet extends Migration
             $table->string('chuyen_muc');
             $table->string('tieu_de');
             $table->string('anh');
-            $table->string('noi_dung');
+            $table->longText('noi_dung');
             $table->string('trang_thai');
             $table->timestamp('ngay_dang');
         });
